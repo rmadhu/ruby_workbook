@@ -12,3 +12,5 @@ def generate_UUID
 
     uuid
 end
+
+puts generate_UUID()
