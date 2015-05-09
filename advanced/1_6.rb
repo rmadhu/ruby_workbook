@@ -4,7 +4,10 @@ def dot_separated_ip_address?(input_string)
 
   while dot_separated_words.size > 0 do
     word = dot_separated_words.pop
-    return false if !is_a_number?(word)
+    return false if !word.to_i.is_a? Numeric
   end
   return true
 end
+
+puts dot_separated_ip_address?("rama.madhu")
+puts dot_separated_ip_address?("10.22.12.255")

@@ -6,5 +6,6 @@ class String
     self.replace(words.join(' ') + punctuation)
   end
 end
+statement = "How are you?" 
 
-statement.map_words! { |word| word.reverse }
+puts statement.map_words! { |word| word.reverse }
